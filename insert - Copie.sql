@@ -45,6 +45,8 @@ INSERT INTO Personnel VALUES (4,'mdp4','Garcia','Marie','Soigneur',NULL,NULL,NUL
 INSERT INTO Personnel VALUES (5,'mdp5','Petit','Lucas','Agent entretien',NULL,NULL,NULL,NULL);
 INSERT INTO Personnel VALUES (6,'mdp5','Timothée','Roulin','Soigneur en chef',NULL,NULL,NULL,1);
 INSERT INTO Personnel VALUES (7,'$2y$10$bIsWpRbtwQ.LPoLxIqqMqOl8fp64uvpI7B7p78C7JOG5.v084WvEO','admin','admin','admin',NULL,NULL,NULL,NULL);
+INSERT INTO Personnel VALUES (8,'mdp6','Abel','Foure','Vendeur',NULL,NULL,NULL,NULL);
+INSERT INTO Personnel VALUES (9,'mdp7','Aymerick','Bailleul','Vendeur',NULL,NULL,NULL,NULL);
 
 INSERT INTO Animal VALUES (1,'Lion','Simba',DATE '2015-05-10',190,'M',1,NULL,NULL,1);
 INSERT INTO Animal VALUES (2,'Lion','Nala',DATE '2016-07-15',130,'F',1,NULL,NULL,1);
@@ -89,7 +91,9 @@ INSERT INTO Specialite VALUES (1,1);
 INSERT INTO Specialite VALUES (3,1);
 INSERT INTO Specialite VALUES (5,1);
 
-INSERT INTO Travaille VALUES (1,3);
+INSERT INTO Travaille VALUES (1,7);
+INSERT INTO Travaille VALUES (2,7);
+INSERT INTO Travaille VALUES (3,7);
 INSERT INTO Travaille VALUES (2,3);
 
 INSERT INTO Repare_enclos VALUES (1,2);
