@@ -125,12 +125,11 @@ CREATE TABLE Nourriture (
         date_donner DATE NOT NULL,
         quantité INT,
         id_aliment INT,
-	id_personnel INT,
-	id_animal INT,
-	CONSTRAINT soigneur_nourriture_FK FOREIGN KEY (id_personnel) REFERENCES Personnel(id_personnel),
-	CONSTRAINT animal_nourriture_FK FOREIGN KEY (id_animal) REFERENCES Animal(id_animal)
-        CONSTRAINT date_donner_P PRIMARY KEY (date_donner, id_aliment,id_animal),
-        
+		id_personnel INT,
+		id_animal INT,
+		CONSTRAINT soigneur_nourriture_FK FOREIGN KEY (id_personnel) REFERENCES Personnel(id_personnel),
+		CONSTRAINT animal_nourriture_FK FOREIGN KEY (id_animal) REFERENCES Animal(id_animal),
+        CONSTRAINT date_donner_P PRIMARY KEY (date_donner, id_aliment,id_animal)
 );
 
 
@@ -168,14 +167,6 @@ CREATE TABLE Parrainage (
         CONSTRAINT ID_parrainage_P PRIMARY KEY (id_visiteur, id_animal)
 );
 
-CREATE TABLE Donner (
-        id_regime INT,
-        id_animal INT,
-        CONSTRAINT regime_donner__FK FOREIGN KEY (id_regime) REFERENCES Regime(id_regime),
-        CONSTRAINT animal_donner__FK FOREIGN KEY (id_animal) REFERENCES Animal(id_animal),
-        CONSTRAINT ID_donne_P PRIMARY KEY (id_regime, id_animal)
-);
-
 CREATE TABLE Recoit (
         id_soin INT,
         id_animal INT,
@@ -184,14 +175,6 @@ CREATE TABLE Recoit (
         CONSTRAINT ID_recoit_P PRIMARY KEY (id_soin, id_animal)
 );
 
-CREATE TABLE Constituer (
-        constituer_combien INT,
-        id_regime INT,
-        id_aliment INT,
-        CONSTRAINT regime_constituer_FK FOREIGN KEY (id_regime) REFERENCES Regime(id_regime),
-        CONSTRAINT aliment_constituer_FK FOREIGN KEY (id_aliment) REFERENCES Aliment(id_aliment),
-        CONSTRAINT ID_constituer_P PRIMARY KEY (id_regime, id_aliment)
-);
 
 CREATE TABLE Cohabite (
         id_cohabiter INT,
@@ -232,7 +215,6 @@ CREATE TABLE nettoie (
         CONSTRAINT personnel_nettoie_FK FOREIGN KEY (id_personnel) REFERENCES Personnel(id_personnel),
         CONSTRAINT ID_nettoie_P PRIMARY KEY (id_zone, id_personnel)
 );
-
 
 
 
