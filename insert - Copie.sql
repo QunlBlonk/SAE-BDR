@@ -38,11 +38,13 @@ INSERT INTO Espece VALUES (3,'Gorilla gorilla','Gorille',1,2);
 INSERT INTO Espece VALUES (4,'Delphinus delphis','Dauphin',0,3);
 INSERT INTO Espece VALUES (5,'Ailuropoda melanoleuca','Panda',1,2);
 
-INSERT INTO Personnel VALUES (1,'mdp1','Dupont','Jean',1,'Veterinaire',NULL,NULL,NULL,1);
-INSERT INTO Personnel VALUES (2,'mdp2','Bernard','Alice',0,'Soigneur',NULL,NULL,1,1);
-INSERT INTO Personnel VALUES (3,'mdp3','Robert','Paul',0,'Vendeur',1,NULL,1,1);
-INSERT INTO Personnel VALUES (4,'mdp4','Garcia','Marie',0,'Soigneur',NULL,2,1,2);
-INSERT INTO Personnel VALUES (5,'mdp5','Petit','Lucas',0,'Agent entretien',NULL,NULL,1,3);
+INSERT INTO Personnel VALUES (1,'mdp1','Dupont','Jean','Veterinaire',NULL,NULL,NULL,NULL);
+INSERT INTO Personnel VALUES (2,'mdp2','Bernard','Alice','Soigneur',NULL,NULL,NULL,NULL);
+INSERT INTO Personnel VALUES (3,'mdp3','Robert','Paul','Gerant',1,NULL,NULL,NULL);
+INSERT INTO Personnel VALUES (4,'mdp4','Garcia','Marie','Soigneur',NULL,NULL,NULL,NULL);
+INSERT INTO Personnel VALUES (5,'mdp5','Petit','Lucas','Agent entretien',NULL,NULL,NULL,NULL);
+INSERT INTO Personnel VALUES (6,'mdp5','Timothée','Roulin','Soigneur en chef',NULL,NULL,NULL,1);
+INSERT INTO Personnel VALUES (7,'$2y$10$bIsWpRbtwQ.LPoLxIqqMqOl8fp64uvpI7B7p78C7JOG5.v084WvEO','admin','admin','admin',NULL,NULL,NULL,NULL);
 
 INSERT INTO Animal VALUES (1,'Lion','Simba',DATE '2015-05-10',190,'M',1,NULL,NULL,1);
 INSERT INTO Animal VALUES (2,'Lion','Nala',DATE '2016-07-15',130,'F',1,NULL,NULL,1);
@@ -59,10 +61,10 @@ INSERT INTO Réparation VALUES (3,600,DATE '2025-02-01','Reparation portail',2,3
 INSERT INTO Soin VALUES (1,DATE '2025-02-10',1,'Vaccin',1);
 INSERT INTO Soin VALUES (2,DATE '2025-02-15',2,'Examen',1);
 INSERT INTO Soin VALUES (3,DATE '2025-03-01',1,'Analyse sang',1);
-
-INSERT INTO Regime VALUES (1,'Carnivore',DATE '2025-01-01',NULL,2);
-INSERT INTO Regime VALUES (2,'Herbivore',DATE '2025-01-01',NULL,4);
-INSERT INTO Regime VALUES (3,'Poisson',DATE '2025-01-01',NULL,2);
+	
+INSERT INTO Nourriture VALUES (DATE '2025-01-01', 1, 10, 1, 2);
+INSERT INTO Nourriture VALUES (DATE '2025-01-02', 3, 40, 2, 2);
+INSERT INTO Nourriture VALUES (DATE '2025-01-03', 1, 8, 1, 4);
 
 INSERT INTO Contrat VALUES (1,DATE '2023-01-01',DATE '2026-01-01',3000,'Veterinaire',1);
 INSERT INTO Contrat VALUES (2,DATE '2024-01-01',DATE '2027-01-01',2200,'Soigneur',2);
@@ -73,19 +75,6 @@ INSERT INTO Recoit VALUES (1,1);
 INSERT INTO Recoit VALUES (1,2);
 INSERT INTO Recoit VALUES (2,3);
 INSERT INTO Recoit VALUES (3,5);
-
-INSERT INTO Donner VALUES (1,1);
-INSERT INTO Donner VALUES (1,2);
-INSERT INTO Donner VALUES (2,3);
-INSERT INTO Donner VALUES (2,7);
-INSERT INTO Donner VALUES (3,6);
-
-INSERT INTO Constituer VALUES (5,1,1);
-INSERT INTO Constituer VALUES (3,1,2);
-INSERT INTO Constituer VALUES (10,2,3);
-INSERT INTO Constituer VALUES (4,2,4);
-INSERT INTO Constituer VALUES (6,2,5);
-INSERT INTO Constituer VALUES (7,3,2);
 
 INSERT INTO Parrainage VALUES ('A',1,1);
 INSERT INTO Parrainage VALUES ('B',2,3);
