@@ -94,7 +94,7 @@ INSERT INTO Specialite VALUES (5,1);
 INSERT INTO Travaille VALUES (1,7);
 INSERT INTO Travaille VALUES (2,7);
 INSERT INTO Travaille VALUES (3,7);
-INSERT INTO Travaille VALUES (2,3);
+INSERT INTO Travaille VALUES (2,8);
 
 INSERT INTO Repare_enclos VALUES (1,2);
 INSERT INTO Repare_enclos VALUES (2,4);
