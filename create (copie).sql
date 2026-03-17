@@ -122,9 +122,9 @@ CREATE TABLE Soin (
 );
 
 CREATE TABLE Nourriture (
-        date_donner DATE NOT NULL,
-        quantité INT,
-        id_aliment INT,
+        date_donner DATETIME NOT NULL,
+        quantité INT DEFAULT 0,
+        id_aliment INT ,
 		id_personnel INT,
 		id_animal INT,
 		CONSTRAINT soigneur_nourriture_FK FOREIGN KEY (id_personnel) REFERENCES Personnel(id_personnel),
