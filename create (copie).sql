@@ -122,7 +122,7 @@ CREATE TABLE Soin (
 );
 
 CREATE TABLE Nourriture (
-        date_donner DATETIME NOT NULL,
+        date_donner TIMESTAMP NOT NULL,
         quantité INT DEFAULT 0,
         id_aliment INT ,
 		id_personnel INT,
