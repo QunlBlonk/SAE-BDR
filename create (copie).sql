@@ -99,7 +99,7 @@ CREATE TABLE Personnel (
         mdp VARCHAR(255),
         nom_personnel VARCHAR(50),
         prenom_personnel VARCHAR(50),
-        type_personnel_présent VARCHAR(50),
+        type_personnel_present VARCHAR(50),
         id_boutique INT,
         remplacant_soingeur INT,
         a_comme_chef INT,
